@@ -15,7 +15,7 @@ function Restaurants({YoursDishes = [] , restaurant = []}) {
     ))}
   </div>
   <h1>Restaurants with online food delivery in Hyderabad</h1>
-    <div className="w-11/12 mx-auto overflow-x-auto whitespace-nowrap scrollbar-hide">
+   
     {restaurant.map((item, i) => (
      <RestaurantCard 
         key={i}
@@ -23,7 +23,6 @@ function Restaurants({YoursDishes = [] , restaurant = []}) {
      image={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${item.info.cloudinaryImageId}`}/>
     ))}
   </div>
-</div>
 
   )
 }

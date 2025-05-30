@@ -24,15 +24,17 @@ function App() {
 
   })
     }, [])
-    
-
   return (
  <>
+  
+
    <Header/>
    <Restaurants 
    YoursDishes ={YoursDishes}
    restaurant={restaurant}
    />
+
+
  </>
   )
 }
