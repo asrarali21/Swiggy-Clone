@@ -4,6 +4,8 @@ import './App.css'
 import Restaurants from './components/Restaurants'
 import axios from 'axios'
 import Header from './components/Header'
+import { Route, Routes } from 'react-router-dom'
+import SearchPage from './pages/SearchPage'
 
 
 function App() {
@@ -26,13 +28,24 @@ function App() {
     }, [])
   return (
  <>
+   <Routes>
+   <Route path='/' element = {
+    <>
+    <Header/>
+    <Restaurants YoursDishes ={YoursDishes} restaurant={restaurant}/>
+    </>
+    }/>
+   
+    <Route path='/search' element ={
+      <>
+      <Header/>
+      <SearchPage/>
+      </>
+      }/>
+      </Routes>
   
-
-   <Header/>
-   <Restaurants 
-   YoursDishes ={YoursDishes}
-   restaurant={restaurant}
-   />
+   
+  
 
 
  </>
