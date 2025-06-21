@@ -42,8 +42,7 @@ function Header() {
    
    
   return ( 
-      <>
-      
+    <>
         <div className='black-overlay w-full h-full fixed  duration-500 ' onClick={hideSideToggle} style={{
           opacity : Toggle ? 1 : 0,
           visibility : Toggle ? "visible" : "hidden"
@@ -87,10 +86,7 @@ function Header() {
  
       </>
   
- 
-    
-   
-        
+
    
   )
 }
